@@ -1,0 +1,57 @@
+.sec4 {
+    width: 80%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.795);
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+    border-radius: 15px;
+    display: grid;
+    grid-template-areas:
+        'title title'
+        'contacts marketplace'
+        'contacts marketplace'
+    ;
+    justify-content: space-around;
+    justify-items: center;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.sec4 h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+    padding: 3px;
+}
+
+.title {
+    background-image: linear-gradient(to bottom, #f4a361de, #e76f51d7);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.459);
+    grid-area: title;
+    color: #fff;
+    width: 150%;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.contacts ul li {
+    margin-top: 15px;
+}
+
+.contacts p {
+    color: black;
+    display: inline;
+    margin-left: 10px;
+}
+
+.contacts p:nth-child(2) {
+    margin-left: 5px;
+}
+
+.marketplace {
+    grid-area: marketplace;
+}

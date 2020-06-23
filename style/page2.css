@@ -1,0 +1,125 @@
+/* Halaman 2 */
+
+.s2{
+
+    background-image: url(../img/marvin-meyer-SYTO3xs06fU-unsplash_opt.jpg);
+}
+
+.sect2 {
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    place-content: start;
+    grid-template-areas: 
+    'title title title'
+    'desc why why'
+    'desc why why'
+    'tech tech tech'
+    ;
+    height: 100%;
+    grid-template-rows: .2fr .5fr .3fr;
+    /* grid-template-columns: repeat(3, 1fr); */
+    background-image: radial-gradient(ellipse at top, #12557269, #1e755565);
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 30vh; */
+    /* padding: 5% 0 5% 0; */
+    /* box-shadow: inset 0 -8px 8px rgba(0, 0, 0, 0.205); */
+}
+
+.desc {
+    background: rgba(255, 255, 255, 0.884);
+    grid-area: desc;
+    color: black;
+    margin: 3% 15% 10% 15% ;
+    padding: 10%;
+    font-size: 1.2em;
+    font-style: italic;
+    opacity: .9;
+    transform: skew(-2deg, 2deg);
+    box-shadow: 0 0 8px #00000063;
+}
+
+.why {
+    /* background: white; */
+    grid-area: why;
+    margin: auto 10%;
+    /* padding: 10%; */
+
+}
+
+.why h3{
+    border-bottom: 2px solid #e76f51;
+
+    background: rgba(0, 0, 0, 0.473);
+    text-align: center;
+    padding: 8px;
+}
+
+.why ul li {
+    /* border-left: 2px solid #e76f51; */
+    margin-top: 5px;
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.479);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.why ul li span {
+    margin-right: 5px;
+    padding: 10px;
+    min-width: 20px;
+    /* width: 30px !important;
+    height: 30px !important; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e76f51;
+    border-radius: 50px;
+}
+
+.tech {
+    background: rgba(255, 255, 255, 0.842);
+    text-align: center;
+    grid-area: tech;
+    color: black;
+    margin-bottom: 0;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.425);
+}
+
+.tech ul {
+    display: flex;
+    margin: 2% 5%;
+    justify-content: space-evenly;
+}
+
+.tech ul li{
+    padding: 1%;
+    text-align: center;
+    background: #00a8978c;
+    border: 8px solid #95e7dd8f;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.tech ul li span{
+    font-size: .9em;
+}
